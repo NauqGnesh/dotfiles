@@ -1,0 +1,27 @@
+"-------------------------------------------------------------------------------
+" Tabs
+"-------------------------------------------------------------------------------
+" Open current directory
+nmap te :tabedit 
+nmap <S-Tab> :tabprev<Return>
+nmap <Tab> :tabnext<Return>
+
+"-------------------------------------------------------------------------------
+" Windows
+"-------------------------------------------------------------------------------
+" Split window
+nmap ss :split<Return><C-w>w
+nmap sv :vsplit<Return><C-w>w
+" Move window
+map sh <C-w>h
+map sk <C-w>k
+map sj <C-w>j
+map sl <C-w>l
+" Resize window
+nmap <C-S-h> <C-w><
+nmap <C-S-l> <C-w>>
+nmap <C-S-k> <C-w>+
+nmap <C-S-j> <C-w>-
+" remove highlight
+nnoremap <BS><BS> :noh<Return>
+
